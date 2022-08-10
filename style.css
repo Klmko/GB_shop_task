@@ -217,6 +217,13 @@ a {
     background: #F8F8F8;
 }
 
+/* .fi__card:hover {
+    width: 360px;
+    margin-bottom: 30px;
+    background: rgba(58, 56, 56, 0.86);
+} */
+
+
 .fi__card h3 {
     margin: 25px 18px 13px;
 }
