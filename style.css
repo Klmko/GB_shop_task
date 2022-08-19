@@ -115,9 +115,69 @@ a {
     height: 764px;
 }
 
+.breadcrumb {
+    background: #F1E4E6;
+    /* margin-bottom: 65px; */
+    height: 148px;
+}
+
+.breadcrumb__container {
+    display: flex;
+    max-width: 1140px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breadcrumb__arrivals {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.breadcrumb__ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.breadcrumb__ul_a {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumb__ul_a:active {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.slider__container {
+    display: flex;
+    justify-content: center;
+}
+
+.product_info {
+    height: 664px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.product_info__container {
+    top: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
 .top__promo_container {
     display: flex;
-    max-width: 1600px;
+    max-width: 1140px;
+    height: 100%;
     margin: auto;
     align-items: center;
 }
@@ -156,6 +216,7 @@ a {
 
 
 /* ========  menu  ========== */
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -225,6 +286,34 @@ a {
 }
 
 
+/* ========  menu CATALOG PAGE  ========== */
+
+.catalog_menu__container {
+    display: flex;
+    margin-top: 65px;
+    max-width: 1140px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.mc__filter_header {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.mc__filter_ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+
+
 /* ========  futured_items  ========== */
 
 .fetured_items {
@@ -266,13 +355,49 @@ a {
     width: 360px;
     margin-bottom: 30px;
     background: #F8F8F8;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* .fi__card:hover {
-    width: 360px;
-    margin-bottom: 30px;
-    background: rgba(58, 56, 56, 0.86);
-} */
+.fi__card:hover {
+    box-shadow: 4px 1px 15px 0px #00000030;
+}
+
+
+.fi__card:hover .fi__card_img {
+    filter: brightness(0.25);
+}
+
+
+.fi__cart_addurl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    pointer-events: all;
+    width: 100%;
+}
+
+.fi__cart_addurl p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 11px;
+}
+
+.fi__cart_addbox {
+    display: none;
+}
+
+.fi__card:hover .fi__cart_addbox {
+    border: solid 1px #FFFFFF;
+    display: flex;
+    pointer-events: none;
+    position: absolute;
+    top: 188px;
+}
 
 
 .fi__card h3 {
@@ -484,6 +609,13 @@ a {
     justify-content: center;
 }
 
+.footer__bottom_container {
+    display: flex;
+    justify-content: center;
+    width: 1140px;
+}
+
+
 .fb__copyright {
     font-size: 16px;
     line-height: 19px;
@@ -491,6 +623,7 @@ a {
     display: flex;
     justify-content: center;
     margin-right: 41%;
+    align-self: center;
 }
 
 .fb__block_socialicons {
@@ -505,8 +638,8 @@ a {
     margin-right: 7.5px;
     background-color: #FFFFFF;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .socicon_sq:hover {
